@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartSchool | Login</title>
+      <link rel="icon" href="https://ssl.gstatic.com/classroom/ic_product_classroom_32.png">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script defer src="script.js"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    header h2 {
+        margin: 10px 0 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    main {
+        padding: 20px;
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    button:hover {
+        background-color: #333;
+        color: white;
+    }
+    .login-with-google-btn {
+        background-color: #DB4437;
+        color: white;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #f4f4f9;
+        color: #666;
+        font-size: 0.9rem;
+    }
+    footer a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+blockquote {
+        font-style: italic;
+        color: black;
+        margin: 15px 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .quote-container {
+        display: inline-block;
+        position: relative;
+    }
+    .quote-container.active {
+        opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SmartSchool</h1>
+    <h2>Login to SmartSchool</h2>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <form>
+        <p>Sign in options:</p>
+        <div class="button-container">
+          <button type="button" onclick="passWord()">Enter Password</button>
+          <button id="openPopup" type="button" title="Opens a helpful popup window">Open Popup Window</button>
+          <button type="button" class="login-with-google-btn">Sign in with Google</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>SmartSchool is an educational program that supports K-8 Learning.</p>
+    <div class="quote-container">
+      <blockquote id="quote"></blockquote>
+    </div>
+    <p>COPYRIGHT ©2025 SmartSchool | <a href="credits.txt">View Credits</a></p>
+  </footer>
+
+  <script>
+    const quotes = [
+      "“SmartSchool is better” — Austin Lynsada, 8th Grader at Junior Middle School",
+      "“Very accessible website to get to multiple learning programs at once!” — Jack Isaiah-Howards, 10th Grader at Middlebrook High School",
+      "“My teacher can see my work and use AI to edit it! So convenient.” — Eleanor Tivaln, 7th Grader at East Grover Public Schools",
+      "“SmartSchool makes doing homework easier” — Steve Fialn, 12th Grader at Pike County Private School",
+      "“Very recommended!!!!” — Grace Homer, 9th Grader at Omaha Public School #29",
+      "“Only 10 million people use this program??!? There has to be more!” — Alexander Woden, 6th Grader at Omaha Public School #08"
+
+    ];
+
+    let currentQuote = 0;
+
+    function changeQuote() {
+      const quoteElement = document.getElementById('quote');
+      quoteElement.classList.remove('active'); // Hide current quote
+      setTimeout(() => {
+        quoteElement.textContent = quotes[currentQuote];
+        quoteElement.classList.add('active'); // Show next quote
+      }, 1000); // Wait for fade out to complete
+      currentQuote = (currentQuote + 1) % quotes.length;
+    }
+
+    setInterval(changeQuote, 5000); // Change quote every 5 seconds
+    changeQuote(); // Initialize with the first quote
+  </script>
+
+</body>
+</html>
