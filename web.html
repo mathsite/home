@@ -1,0 +1,27 @@
+<script>
+          function displayWebsite() {
+            const url = document.getElementById('websiteUrl').value;
+            const iframe = document.getElementById('websiteFrame');
+
+            // Set the iframe's source to the URL entered in the text input
+            iframe.src = "https://" + url;
+        }
+</script>
+<style>
+          HTML{
+                    background-color:white;
+          }
+          
+</style>
+<center>
+  <h1>Unblocked Website Player | SmartSchool</h1>
+              <link rel="icon" href="https://ssl.gstatic.com/classroom/ic_product_classroom_32.png">
+
+  <h2>(some websites may not work due to website security)</h2>
+<input type="text" id="websiteUrl" placeholder="Enter website URL (without https://)">
+    <button onclick="displayWebsite()">Display Website</button>
+</center>
+    <iframe id="websiteFrame" style="width:99%; height:26.5cm;" style="border: 1px solid #ccc;"></iframe>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSchool | Player</title>
