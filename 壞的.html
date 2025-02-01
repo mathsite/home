@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSchool | Home</title>
+    <link rel="icon" href="https://ssl.gstatic.com/classroom/ic_product_classroom_32.png">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="mainfilestyle.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .game-column {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .game-column p {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    // JavaScript code
+
+function search_animal() {
+    let input = document.getElementById('searchbar').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('animals');
+
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        }
+        else {
+            x[i].style.display = "list-item";
+        }
+    }
+}
+</script>
+    <h1>SmartSchool FreeGames</h1><br>
+    <h2 id="visitor-count">Loading Visitor Count...</h2>
+      <iframe id="myIframe" class="games-iframe" name="iframe_a" src="https://monkeygg2.github.io" allowfullscreen></iframe>
+    <center>
+        <input id="searchbar" 
+               onkeyup="search_animal()" 
+               type="text" name="search" 
+               placeholder="Search games..">
+    </center>
+    <div class="list">
+    <div class="container">
+        <div class="game-column">
+            <p><a class="animals" href="https://geometryspot.com" target="iframe_a">Geometry Spot</a></p>
+            <p><a class="animals" href="https://highwayracer.github.io" target="iframe_a">Highway Racer</a></p>
+            <p><a  class="animals" href="https://1v1.lol" target="iframe_a">1v1.lol</a></p>
+            <p><a  class="animals" href="https://dddavit.github.io/subway" target="iframe_a">Subway Surfers</a></p>
+            <p><a  class="animals" href="https://www.friv.com/z/games/basketchamps/game.html" target="iframe_a">Basket Champs</a></p>
+        </div>
+        <div class="game-column">
+            <p><a  class="animals" href="https://ubg365.github.io/gunspin/play.html" target="iframe_a">Spin</a></p>
+            <p><a  class="animals" href="https://mathplayground.com" target="iframe_a">PANIC</a></p>
+            <p><a  class="animals" href="https://monkeygg2.github.io" target="iframe_a">MonkeyGG2</a></p>
+            <p><a  class="animals" href="https://littlealchemy2.com" target="iframe_a">Little Alchemy 2</a></p>
+            <p><a  class="animals" href="https://Neal.fun" target="iframe_a">Neal.fun</a></p>
+        </div>
+        <div class="game-column">
+            <p><a  class="animals" href="https://lolbeans.io/" target="iframe_a">Beans Lol</a></p>
+            <p><a  class="animals" href="https://linerider.com" target="iframe_a">Line Rider</a></p>
+            <p><a  class="animals" href="https://swordslasher.com/games/ovo3/" target="iframe_a">OVO Dimensions (OVO 3)</a></p>
+            <p><a  class="animals" href="https://poki.to" target="iframe_a">Poki Kids</a></p>
+            <p><a  class="animals" href="https://eggy-car.github.io" target="iframe_a">Eggy Car</a></p>
+            <p><a  class="animals" href="https://easyfun.gg" target="iframe_a">Easyfun.gg (ROBLOX)</a></p>
+
+
+        </div>
+        <div class="game-column">
+            <p><a  class="animals" href="https://infinite-craft.com" target="iframe_a">Infinite Craft</a></p>
+            <p><a  class="animals" href="https://geometrydash-game.io/bullet-bros" target="iframe_a">Bullet Bros</a></p>
+            <p><a  class="animals" href="https://monstertracks.github.io" target="iframe_a">Monster Tracks</a></p>
+            <p><a  class="animals" href="https://shuttleproxy.com/" target="iframe_a">Shuttle Proxy</a></p>
+            <p><a  class="animals" href="https://spinningrat.online/" target="iframe_a">Spinning Rat (Online)</a></p>
+
+        </div>
+        <div class="game-column">
+            <p><a  class="animals" href="https://ubg44.github.io/" target="iframe_a">Unity Unblocked Games</a></p>
+            <p><a  class="animals" href="https://eaglecraft.pages.dev/" target="iframe_a">Minecraft 1.8</a></p>
+            <p><a  class="animals" href="https://astrogames06.github.io/" target="iframe_a">Astrogames (Github)</a></p>
+            <p><a  class="animals" href="whatbeatsrock.htm" target="iframe_a">What Beats Rock (NEW!)</a></p>
+            <p><a  class="animals" href="web.html" target="iframe_a">Website Unblocker</a></p>
+
+
+        </div>
+        
+    </div>
+    </div>
+    <footer>
+        <h2>Notes:</h2>
+        <p>I am sorry that I am unable to link</p>
+        <p>whatbeatsrock.com to this website.</p>
+        <p>I fully understand that there is a high</p>
+        <p>demand for What Beats Rock, but there</p>
+        <p> There is no possible way for me to link it.</p>
+        <p>So sorry for the inconvenience. If there are any</p>
+        <p>wanted games, just put it here:</p><input type="text" placeholder="Put suggestions here..."/>
+        <p>Thank you for using my website!</p>
+        <b>SmartSchool FreeGames ©2025</b>
+    </footer>
+
+</body>
+</html>
